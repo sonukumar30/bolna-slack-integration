@@ -1,0 +1,19 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Bolna → Slack Integration — Environment Variables
+# Copy this file to .env and fill in real values. NEVER commit .env to git.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Slack Bot OAuth token (starts with xoxb-)
+# Obtain from: https://api.slack.com/apps → your app → OAuth & Permissions
+SLACK_BOT_TOKEN=xoxb-your-slack-bot-token-here
+
+# Slack channel ID (NOT the name — the ID like C08XXXXXXX)
+# Right-click the channel in Slack → "View channel details" → scroll to the bottom
+SLACK_CHANNEL_ID=C08XXXXXXXXX
+
+# (Optional) A shared secret you configure in Bolna agent settings
+# If set, the server will verify the X-Bolna-Signature header on incoming webhooks
+BOLNA_WEBHOOK_SECRET=
+
+# Port for the local server (uvicorn default is 8000)
+PORT=8000
